@@ -1,0 +1,42 @@
+ai_so@DESKTOP-B44B624 MINGW64 ~
+$ mkdir git_challenge
+
+ai_so@DESKTOP-B44B624 MINGW64 ~
+$ cd git_challenge
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/ai_so/git_challenge/.git/
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ echo "Hello,world!" > hello_world.txt
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main c2440be] hello_world.txtを追加
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ create mode 100644 hello_world.txt
+ delete mode 100644 hello_world.txt/helle_world.txt.txt
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語を追記"
+[main 2c4155f] 日本語を追記
+ 1 file changed, 1 insertion(+)
+
+ai_so@DESKTOP-B44B624 MINGW64 ~/git_challenge (main)
+$ git log --oneline
+2c4155f (HEAD -> main) 日本語を追記
+c2440be hello_world.txtを追加
